@@ -3,17 +3,7 @@
  * the "controller" of the Main view class.
  */
 Ext.define('pcms.view.main.MainController', {
-    extend: 'Ext.app.ViewController',
+    extend: 'pcms.view.app.AppController',
 
-    alias: 'controller.main',
-
-    onItemSelected: function (sender, record) {
-        Ext.Msg.confirm('Confirm', 'Are you sure?', 'onConfirm', this);
-    },
-
-    onConfirm: function (choice) {
-        if (choice === 'yes') {
-            //
-        }
-    }
+    alias: 'controller.main'
 });

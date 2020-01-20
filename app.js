@@ -14,5 +14,5 @@ Ext.application({
     ],
 
     // The name of the initial view to create.
-    mainView: 'pcms.view.main.Main'
+    // mainView: 'pcms.view.login.Login'
 });

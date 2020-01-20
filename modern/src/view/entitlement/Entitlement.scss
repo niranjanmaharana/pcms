@@ -1,0 +1,43 @@
+// .x-big .x-panel-body-el {
+//     background: #ffffff !important;
+// }
+
+.entitlement {
+    background-color: #d0d0d0;
+}
+
+.x-img.x-img-background {
+    background-size: 100% 100% !important;
+}
+
+.entitlement-header {
+    color: #5f6063;
+    font-size: 16px;
+    padding: 4px 2px 0;
+    background: #ffffff;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    -moz-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+.header-title {
+    padding: 5px 0px 0px 10px;
+
+    .pcmsIcons {
+        color: #66ab16;
+        font-size: 22px;
+    }
+}
+
+.entitlement-body {
+    padding: 10px;
+}
+
+.search-form {
+    background-color: #fafafa;
+    font-size: 1rem;
+
+    .x-container {
+        width: 100%;
+    }
+}

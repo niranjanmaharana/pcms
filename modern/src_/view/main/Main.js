@@ -7,12 +7,14 @@ Ext.define('pcms.view.main.Main', {
     extend: 'Ext.Panel',
     xtype: 'app-main',
 
+    requires: [
+        'pcms.view.main.Header'
+    ],
+
     controller: 'main',
     viewModel: 'main',
 
     items: [{
-		xtype: 'app-header'
-	}, {
-        html: 'Main Page'
+        xtype: 'app-header'
     }]
 });

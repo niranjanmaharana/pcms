@@ -1,0 +1,25 @@
+[{
+    "groupId": "G101",
+    "entitlementId": "INC0101",
+    "name": "Group A",
+    "organizations": "",
+    "providers": "ABC"
+}, {
+    "groupId": "G102",
+    "entitlementId": "INC0102",
+    "name": "Group A",
+    "organizations": "",
+    "providers": "ABC"
+}, {
+    "groupId": "G103",
+    "entitlementId": "INC0102",
+    "name": "Group A",
+    "organizations": "",
+    "providers": "ABC"
+}, {
+    "groupId": "G104",
+    "entitlementId": "INC0104",
+    "name": "Group A",
+    "organizations": "",
+    "providers": "ABC"
+}]

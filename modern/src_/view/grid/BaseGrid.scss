@@ -1,0 +1,18 @@
+.x-column-header-text-inner {
+    text-transform: uppercase;
+}
+
+.x-gridcolumn>.x-header-el {
+    border-right: 0px solid #d0d0d0;
+    color: #9b9fa7;
+    font: bold 13px/20px 'Open Sans',
+        sans-serif;
+    outline: 0;
+    background-color: #e8e7f0;
+}
+
+.x-gridcolumn.x-sorted>.x-header-el,
+.x-gridcolumn>.x-header-el:hover {
+    background-image: none;
+    background-color: #e6f2f5;
+}
