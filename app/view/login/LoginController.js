@@ -39,9 +39,22 @@ Ext.define('pcms.view.login.LoginController', {
 
 		if (form.validate()) {
 			me.getView().mask('Logging in...');
-			// form.submit();
-			debugger;
-			me.publish('loginsuccess', null, null, null);
+
+			Ext.Ajax.request({
+				url: Configuration.getLoginUrl(),
+				method: "GET",
+				jsonData: form.getValues(),
+				success: function(response, action) {
+					form.unmask();
+					// Notify Application.js that a successful login has happened.
+					me.publish('loginsuccess', me.getView(), response, action);
+				},
+				failure: function(error, action) {
+					form.unmask();
+					var responseJson = Ext.decode(error.responseText);
+					Ext.toast(responseJson.message, 3000);
+				}
+			});
 		} else {
 			// form.setFocus();
 		}

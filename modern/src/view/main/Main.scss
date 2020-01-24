@@ -1,6 +1,10 @@
-.headerCls {
-    margin: 0px 0px 3px 0px !important;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3) !important;
+.header-buttons {
+    border-color: #4484c4;
+    background-color: #4484c4;
+    .x-icon-el {
+        font-size: 16px !important;
+        color: #fff;
+    }
 }
 
 .subTitle {
@@ -34,6 +38,7 @@
 .search-form {
     background-color: transparent;
     font-size: 1rem;
+
     .x-container {
         width: 100%;
     }

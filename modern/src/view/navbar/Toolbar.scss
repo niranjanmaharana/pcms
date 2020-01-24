@@ -1,0 +1,28 @@
+.navbar-menu .x-menu-body-wrap-el .x-menu-body-el {
+	background-color: #adb3b8 !important;
+}
+
+.x-toolbar-gray-navbar {
+	text-align: center;
+
+	.x-inner-el {
+		border-left: 4px solid transparent !important;
+	}
+}
+
+.navbar-collapsed {
+	.x-text-el {
+		// transition: all 0.3s;
+		height: 0px;
+		min-height: 0px;
+		width: 0px;
+	}
+
+	.x-icon-el {
+		margin-bottom: 0px !important;
+
+		&:before {
+			font-size: 24px !important;
+		}
+	}
+}

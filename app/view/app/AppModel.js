@@ -10,8 +10,8 @@ Ext.define('pcms.view.app.AppModel', {
         name: 'pcms',
         buildDate: '2018-02-16',
         copyrightYear: '2018',
-        pageName: 'Login'
+        pageName: 'Login',
+        menuBarHidden: true,
+        menuCollasped: true
     }
-
-    //TODO - add data, formulas and/or methods to support your view
 });

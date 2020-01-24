@@ -11,8 +11,18 @@ Ext.define('pcms.view.main.Main', {
     viewModel: 'main',
 
     items: [{
-		xtype: 'app-header'
-	}, {
-        html: 'Main Page'
+        xtype: 'app-header'
+    }, {
+        xtype: 'app-titlebar'
+    }, {
+        xtype: 'panel',
+        layout: {
+            type: 'fit'
+        },
+        items: [{
+            xtype: 'app-navigation'
+        }]
+    }, {
+        xtype: 'app-body'
     }]
 });

@@ -16,6 +16,14 @@ Ext.define('pcms.view.entitlement.EntitlementBody', {
     columns: [{
         text: 'GROUP ID',
         dataIndex: 'groupId',
+        cell: {
+            tools: {
+                play: {
+                    iconCls: 'x-fa fa-external-link',
+                    handler: 'onGroupSelect'
+                }
+            }
+        },
         flex: 1
     }, {
         text: 'ENTITLEMENT ID',
@@ -25,5 +33,10 @@ Ext.define('pcms.view.entitlement.EntitlementBody', {
         text: 'NAME',
         dataIndex: 'name',
         flex: 1
-    }]
+    }],
+    listeners: {
+        cellclick: function() {
+            debugger;
+        }
+    }
 });

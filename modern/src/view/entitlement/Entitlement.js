@@ -7,6 +7,7 @@ Ext.define('pcms.view.entitlement.Entitlement', {
         'pcms.view.entitlement.EntitlementController',
         'pcms.view.entitlement.EntitlementModel',
         'pcms.view.entitlement.EntitlementBody',
+        'pcms.view.baseComponents.BaseCombo',
         'pcms.view.baseComponents.BaseGrid'
     ],
 
@@ -41,12 +42,13 @@ Ext.define('pcms.view.entitlement.Entitlement', {
                 },
             },
             items: [{
-                xtype: 'searchfield',
+                xtype: 'textfield',
                 label: 'Groupd ID/Name',
-                name: 'searchTerm',
-                emptyText: 'Search for Group ID or Name',
-                bind: {
-                    value: '{searchTerm}'
+                reference: 'ref-groupSearchField',
+                flex: 2,
+                autoComplete: false,
+                listeners: {
+                    change: 'onTextChange'
                 }
             }, {
                 xtype: 'spacer',
@@ -69,9 +71,5 @@ Ext.define('pcms.view.entitlement.Entitlement', {
         cls: 'entitlement-body'
     }, {
         xtype: 'app-footer'
-    }],
-
-    listeners: {
-        initialize: 'onRender'
-    }
+    }]
 });

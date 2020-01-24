@@ -3,18 +3,13 @@
  * "mainView" property. That setting causes an instance of this class to be created and
  * added to the Viewport container.
  */
-Ext.define('pcms.view.main.Main', {
+Ext.define('pcms.view.body.Body', {
     extend: 'Ext.Panel',
-    xtype: 'app-main',
+    xtype: 'app-body',
 
-    requires: [
-        'pcms.view.main.Header'
-    ],
-
-    controller: 'main',
-    viewModel: 'main',
+    cls: 'appBody',
 
     items: [{
-        xtype: 'app-header'
+        html: 'Main Page'
     }]
 });

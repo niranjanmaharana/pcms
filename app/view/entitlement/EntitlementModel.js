@@ -17,16 +17,18 @@ Ext.define('pcms.view.entitlement.EntitlementModel', {
                 name: 'envName',
                 type: 'string'
             }],
-            data: [{
-                'envId': 'dev',
-                'envName': 'DEV'
-            }, {
-                'envId': 'sit',
-                'envName': 'SIT'
-            }, {
-                'envId': 'uat',
-                'envName': 'UAT'
-            }]
+            autoLoad: true,
+            pageSize: 3,
+            proxy: {
+                type: 'rest-proxy',
+                noCache: false,
+                url: '../../resources/JSON/environments.json',
+                timeout: 60 * 1000,
+                extraParams: ''
+            },
+            listeners: {
+                //beforeLoad: 'beforeGroupsLoad'
+            }
         },
         'groups': {
             fields: [{
@@ -45,42 +47,18 @@ Ext.define('pcms.view.entitlement.EntitlementModel', {
                 name: 'providers',
                 type: 'string'
             }],
-            data: [{
-                'groupId': 'G101',
-                'entitlementId': 'INC0101',
-                'name': 'Group A',
-                'organizations': '',
-                'providers': 'ABC'
-            }, {
-                'groupId': 'G102',
-                'entitlementId': 'INC0102',
-                'name': 'Group A',
-                'organizations': '',
-                'providers': 'ABC'
-            }, {
-                'groupId': 'G103',
-                'entitlementId': 'INC0102',
-                'name': 'Group A',
-                'organizations': '',
-                'providers': 'ABC'
-            }, {
-                'groupId': 'G104',
-                'entitlementId': 'INC0104',
-                'name': 'Group A',
-                'organizations': '',
-                'providers': 'ABC'
-            }],
             autoLoad: true,
             pageSize: 3,
-            // proxy: {
-            //     type: 'pcms-proxy',
-            //     extraParams: {
-            //         cmd: 'getDownloads'
-            //     }
-            // },
-            // listeners: {
-            //     beforeLoad: 'beforeGroupsLoad'
-            // }
+            proxy: {
+                type: 'rest-proxy',
+                noCache: false,
+                url: '../../resources/JSON/groups.json',
+                timeout: 60 * 1000,
+                extraParams: ''
+            },
+            listeners: {
+                //beforeLoad: 'beforeGroupsLoad'
+            }
         }
     }
 });

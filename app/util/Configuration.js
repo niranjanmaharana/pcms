@@ -68,5 +68,19 @@ Ext.define('pcms.util.Configuration', {
 
     hasUserRole: function (value) {
         return !Ext.isEmpty(this.getUserRoles()) ? Ext.Array.contains(this.getUserRoles(), value) : false;
+    },
+
+    /**
+     *	Returns the login url of the application's login service.  This isn't in the MainModel because
+     *	the login package needs the information and the MainModel hasn't been instantiated or the value doesn't need
+     *	to be leveraged in binding.
+     *
+     *	@return {String} The login url.
+     */
+    getLoginUrl: function() {
+        //var loginUrl = Ext.manifest.loginUrl;
+        // var apiUrl = this.config.apiUrl;
+        // return Ext.isEmpty(apiUrl) ? '/user/login' : apiUrl + '/user/login';
+        return '../../resources/JSON/login.json';
     }
 }); 

@@ -76,6 +76,7 @@ Ext.define('pcms.view.login.Login', {
 			xtype: 'passwordfield',
 			label: 'Password',
 			value: 'abcdefghi',
+			revealable: true,
 			required: true,
 			listeners: {
 				change: 'onFieldChange'

@@ -1,14 +1,15 @@
 /**
  * This class is the view model for the Main view of the application.
  */
-Ext.define('pcms.view.main.MainModel', {
+Ext.define('pcms.view.titlebar.TitlebarModel', {
     extend: 'pcms.view.app.AppModel',
 
-    alias: 'viewmodel.main',
+    alias: 'viewmodel.titlebar',
 
     data: {
         groupId: '',
         pageName: '',
-        title: 'Population'
+        title: 'Population',
+        menuCollapsed: true
     }
 });

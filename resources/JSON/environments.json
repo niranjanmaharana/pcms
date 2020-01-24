@@ -1,0 +1,15 @@
+{
+    "success": true,
+    "data": [{
+        "envId": "dev",
+        "envName": "DEV"
+    }, {
+        "envId": "sit",
+        "envName": "SIT"
+    }, {
+        "envId": "uat",
+        "envName": "UAT"
+    }],
+    "total": 0,
+    "exportTotal": 0
+}

@@ -41,7 +41,7 @@ Ext.define('pcms.view.main.Header', {
             layout: 'vbox',
             items: [{
                 xtype: 'container',
-                html: '<span class="pcmsIcons icon-pcms-PCMS"></span>'
+                html: '<span class="pcmsIcons icon-pcms-PCMS"></span>'
             }, {
                 xtype: 'label',
                 bind: {
